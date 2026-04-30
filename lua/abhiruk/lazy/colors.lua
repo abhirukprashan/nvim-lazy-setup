@@ -10,22 +10,20 @@ return{
 
   -- Override highlights or add new highlights
               on_highlights = function(highlights, colors) end,
-
-  -- Override colors
               colors = {
                  bg = "#141415",
                  inactiveBg = "#1c1c24",
                  fg = "#cdcdcd",
-                 floatBorder = "#878787",
+                 floatBorder = "#1c1c24",
                  line = "#252530",
                  comment = "#606079",
                  builtin = "#b4d4cf",
-                 func = "#c48282",
-                 string = "#e8b589",
+                 func = "#d8647e",
+                 string = "#ffffff",
                  number = "#e0a363",
                  property = "#c3c3d5",
                  constant = "#aeaed1",
-                 parameter = "#bb9dbd",
+                 parameter = "#e9b96e",
                  visual = "#333738",
                  error = "#d8647e",
                  warning = "#f3be7c",
