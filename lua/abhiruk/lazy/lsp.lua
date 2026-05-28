@@ -36,6 +36,7 @@ return {
                 "gopls",
                 "vtsls",
                 "tailwindcss",
+                "jdtls",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -94,7 +95,7 @@ return {
                     local lspconfig = require("lspconfig")
                     lspconfig.tailwindcss.setup({
                         capabilities = capabilities,
-                        filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "heex" , "go", "ru","lua"},
+                        filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "heex" , "go", "ru","lua", "java"},
                     })
                 end,
             }

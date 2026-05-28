@@ -1,8 +1,6 @@
 return {
+
   "windwp/nvim-autopairs",
-  config = function()
-      require("nvim-autopairs").setup({
-        disable_filetype = { "TelescopePrompt", "spectre_panel" },
-      })
-  end,
+  event = "InsertEnter",
+  config = true
 }
