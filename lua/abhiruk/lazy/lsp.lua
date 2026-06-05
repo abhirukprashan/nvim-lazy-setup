@@ -31,6 +31,7 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
+                "clangd",
                 "lua_ls",
                 "rust_analyzer",
                 "gopls",
@@ -95,7 +96,7 @@ return {
                     local lspconfig = require("lspconfig")
                     lspconfig.tailwindcss.setup({
                         capabilities = capabilities,
-                        filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "heex" , "go", "ru","lua", "java"},
+                        filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "heex" , "go", "ru","lua", "java", "c", "c++"},
                     })
                 end,
             }
