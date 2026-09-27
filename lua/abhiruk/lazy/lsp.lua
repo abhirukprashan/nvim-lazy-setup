@@ -94,6 +94,7 @@ return {
                 end,
                 ["tailwindcss"] = function()
                     local lspconfig = require("lspconfig")
+                    
                     lspconfig.tailwindcss.setup({
                         capabilities = capabilities,
                         filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "heex" , "go", "ru","lua", "java", "c", "c++"},
